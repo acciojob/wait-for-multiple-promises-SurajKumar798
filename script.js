@@ -3,7 +3,7 @@
       const delayTime = (Math.random() * 2 + 1).toFixed(3);
       return new Promise((resolve) => {
         setTimeout(() => {
-          resolve({ name: `Promise ${index}`, time: parseFloat(delay) });
+          resolve({ name: `Promise ${index}`, time: parseFloat(delayTime) });
         }, delayTime * 1000);
       });
     }
